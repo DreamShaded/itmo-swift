@@ -101,7 +101,7 @@ final class Zoo {
 
     private func printDailyStatistics(births: Int, deaths: Int) {
         print("Статистика:")
-        print("Всего животных: \(animals.count)")
+        print("В зоопарке осталось животных: \(animals.count)")
         print("Родилось за день: \(births)")
         print("Умерло за день: \(deaths)")
         for entry in countsBySpecies() {
@@ -113,7 +113,7 @@ final class Zoo {
     private func printFinalStatistics() {
         print("===== Итоги симуляции =====")
         print("Прошло дней: \(day)")
-        print("Осталось животных: \(animals.count)")
+        print("В зоопарке осталось животных: \(animals.count)")
         if animals.isEmpty { return }
         for entry in countsBySpecies() {
             print("  \(entry.species): \(entry.count)")
